@@ -1,26 +1,21 @@
 <?php
+$nama = array("Andri", "Joko", "Sukma", "Rina", "Sari");
+ 
+for ($i = 0; $i < 5; $i++) {
+  echo "$nama[$i]";
+  echo "<br>";
+}
+?>
+<?php
+$nilai = [80, 65, 90, 45, 70, 100, 40, 35, 20, 44, 78];
 
-echo "<h3>Bilangan Ganjil 1 - 20:</h3>";
-for ($i = 1; $i <= 20; $i++) {
-    if ($i % 2 != 0) {
-        echo $i . "<br>";   // tampil ke bawah
+echo "<h3>Nilai di atas 67:</h3>";
+echo "<ul>";
+
+foreach ($nilai as $n) {
+    if ($n > 67) {
+        echo "<li>$n</li>";
     }
 }
-echo "<br>";
-
-
-echo "<h3>Bilangan Genap 1 - 20:</h3>";
-for ($i = 1; $i <= 20; $i++) {
-    if ($i % 2 == 0) {
-        echo $i . "<br>";   // tampil ke bawah
-    }
-}
-echo "<br>";
-
-
-echo "<h3>Perulangan 100 sampai 0:</h3>";
-for ($i = 100; $i >= 0; $i--) {
-    echo $i . "<br>";      // tampil ke bawah
-}
-
+echo "</ul>";
 ?>
